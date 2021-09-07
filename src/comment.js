@@ -3,10 +3,10 @@ const {Schema, model} = mongoose
 
 const CommentSchema = new Schema({
     content: String,
-    user: [{
+    user: {
         type: Schema.Types.ObjectId,
         ref: 'user'
-    }]
+    }
 })
 
 const Comment = model('comment', CommentSchema)
