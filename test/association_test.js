@@ -1,8 +1,8 @@
 const User = require('../src/user')
 const assert = require('assert');
 const BlogPost = require('../src/blogpost');
-
 const Comment = require('../src/comment');
+
 describe('Associations', ()=>{
     let joe, blogPost, comment;
 
